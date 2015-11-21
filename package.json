@@ -1,0 +1,25 @@
+{
+  "name": "cisco-ucsd-workflow-specification",
+  "main": "./lib/autocomplete-paths",
+  "version": "0.0.0",
+  "description": "Uses autocompletion+ to suggest workflow artifacts used in Cisco UCS Director",
+  "repository": "https://github.com/animathe/cisco-ucsd-workflow-specification.git",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {
+    "underscore-plus": ">=1.1.2",
+    "fuzzaldrin": ">=1.0.0"
+  },
+  "devDependencies": {
+    "coffeelint": "^1.8.1"
+  },
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "1.0.0": "provide"
+      }
+    }
+  }
+}
