@@ -14,6 +14,7 @@ class PathsProvider
     return [] unless options.editor? and options.buffer? and options.cursor?
     #editorPath = options.editor?.getPath()
     #refer to the project root path and check for '/specifications/workflow' folder
+    alert( atom.project.contains('/specifications/workflow') )
     editorPath = atom.project.setPaths('/specifications/workflow') if atom.project.contains('/specifications/workflow')?
     return [] unless editorPath?.length
     basePath = path.dirname(editorPath)
